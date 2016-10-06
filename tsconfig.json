@@ -3,11 +3,19 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
-  }
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!./node_modules/**"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
